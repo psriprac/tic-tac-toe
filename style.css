@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+.container {
+    background-color: gray;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+    gap: 10px;
+
+    align-items: center;
+    justify-items: center;
+}
+
+.container h1 {
+    align-self: end;
+}
+
+.gameboard {
+    align-self: start;
+    
+    height: 400px;
+    width: 400px;
+
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 6px;
+}
+
+.space {
+    background-color: purple;
+    height: 100%;
+    border-radius: 12px;
+}
